@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand: #00936e;
+  --color-brand-hover: #007b5c;
+  --color-background: #f7f9fa;
+  --color-text-main: #1a1a1a;
+  --color-text-sub: #666666;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-[#f7f9fa] text-[#1a1a1a];
+  }
+}
+
+/* Custom scrollbar to match the clean design */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
